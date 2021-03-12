@@ -1,4 +1,5 @@
 Genopy
+
 ######################################################################################
 1- to make sure you have the right dependencies, start by downloading the anaconda and our Genopy.yml file
 2- open command prombt and go to the directory where the .yml file is located
