@@ -1,17 +1,20 @@
 Genopy
 
-#########################################################
+A project aiming to generate data to be used in COVID strain classification. The model is based on building a classifier using both ResNet and a Multi-layer perceptron. This is then integrated into a GAN, which is further transformed into a cGAN.
 
-1- to make sure you have the right dependencies, start by downloading the anaconda and our Genopy.yml file
+This allows avoiding the use of patient data, which can be a major setback in research efforts. Additionally, it allows for exploratory data analysis in detecting new emergent COVID strains, as the cGAN can produce similar GANs to specific continents. Further research could be the integration of an evolutionary neural network model to study COVID evolution and strain generation.
 
-2- open command prombt and go to the directory where the .yml file is located
+**File organization:**
 
-3- Create the environment from the Genopy.yml file: 
-conda env create -f Genopy.yml
+covid_d3.R: Conducting preliminary data analysis
 
-4- Acativate the new environment: conda activate pytorchenv
+UMAP_Projection.ipynb: UMAP generation
 
-5- Verify that the new environment was installed correctly:
- conda env list
+MLP_classifier: classification system using MLP
 
-#########################################################
+ResNet_classifier: classification system using ResNet
+
+D3_GAN: GAN
+
+D3_cGAN: cGAN
+
